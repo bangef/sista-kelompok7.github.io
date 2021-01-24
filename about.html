@@ -115,7 +115,7 @@
     <section class="container">
         <h1 class="display-5"><span class="color">|</span class="text-sista">About Us</h1>
         <div class="card-deck mt-4">
-            <div class="card">
+            <div class="card shadow p-3 mb-5 bg-white rounded">
                 <img class="card-img-top" src="./img/about/about_foto_ficri.png" alt="Card image"
                     style="width:100%">
                 <div class="card-body text-center">
@@ -130,7 +130,7 @@
                             src="./img/about/instagram.svg" style="width: 25px;" alt="Instagram-logo"></a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card shadow p-3 mb-5 bg-white rounded">
                 <img class="card-img-top" src="./img/about/about_foto_faiz.png" alt="Card image"
                     style="width: 100%">
                 <div class="card-body text-center">
@@ -145,8 +145,7 @@
                             src="./img/about/instagram.svg" style="width: 25px;" alt="Instagram-logo"></a>
                 </div>
             </div>
-
-            <div class="card">
+            <div class="card shadow p-3 mb-5 bg-white rounded">
                 <img class="card-img-top" src="./img/about/about_foto_dapoy.png" alt="Card image"
                     style="width:100%">
                 <div class="card-body text-center">
@@ -161,7 +160,7 @@
                             src="./img/about/instagram.svg" style="width: 25px;" alt="Instagram-logo"></a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card shadow p-3 mb-5 bg-white rounded">
                 <img class="card-img-top" src="./img/about/about_foto_ade.png" alt="Card image" style="width:100%">
                 <div class="card-body text-center">
                     <h5 class="card-title font-weight-bold">Ade Fikri Ramadhan</h5>
@@ -234,8 +233,10 @@
             var linkTo = "./login/user/index-user.html";
 
             if (username === "ficrihnp" && password == "fic123") {
-                document.location.href = linkTo;
                 alert(`Selamat datang kembali ${username}`);
+                setTimeout(function() {
+                    location.replace(linkTo);}
+                    );
             } else {
                 alert(`Maaf, password atau username anda salah. Silahkan masukan password atau username dengan benar!`);
             }
@@ -244,10 +245,13 @@
         function validationAdmin() {
             var username = document.getElementById("usernameAdmin").value;
             var password = document.getElementById("passwordAdmin").value;
-            
+            var linkToAdmin = "./login/admin/admin-dsta.html";
+
             if (username === "admin1" && password == "admin") {
-                document.location.href = './login/admin/admin-dsta.html';
                 alert(`Selamat datang kembali ${username}`);
+                setTimeout(function () {
+                    location.replace(linkToAdmin);
+                });
             } else {
                 alert(`Maaf, password atau username anda salah. Silahkan masukan password atau username dengan benar!`);
             }

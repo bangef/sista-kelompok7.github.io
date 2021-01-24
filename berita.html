@@ -171,7 +171,7 @@
         <div class="jumbotron jumbotron-fluid bg-white">
             <h1 class="display-5"><span class="color">|</span>Berita</h1>
             <div class="card-deck mt-4">
-                <div class="card bg-abu-abu">
+                <div class="card bg-abu-abu shadow p-3 mb-5 bg-white rounded">
                     <div class="card-body text-left">
                         <h5 class="card-title font-weight-bold"> STT Terpadu Nurul Fikri Teken MoU dengan P4GN BNN Jawa
                             Barat (BNN Kota Depok) untuk menciptakan Kampus Bersinar (Bersih Narkoba)</h5>
@@ -189,7 +189,7 @@
                 </div>
             </div>
             <div class="card-deck mt-4">
-                <div class="card bg-abu-abu">
+                <div class="card bg-abu-abu shadow p-3 mb-5 bg-white rounded">
                     <div class="card-body text-left">
                         <h5 class="card-title font-weight-bold">STT Terpadu Nurul Fikri Teken MoU dengan P4GN BNN Jawa
                             Barat (BNN Kota Depok) untuk menciptakan Kampus Bersinar (Bersih Narkoba)</h5>
@@ -207,7 +207,7 @@
                 </div>
             </div>
             <div class="card-deck mt-4">
-                <div class="card bg-abu-abu">
+                <div class="card bg-abu-abu shadow p-3 mb-5 bg-white rounded">
                     <div class="card-body text-left">
                         <h5 class="card-title font-weight-bold">GEMASTIK 2020 Mahasiswa STT Terpadu Nurul Fikri “TIK
                             untuk Indonesia Maju”</h5>
@@ -251,7 +251,7 @@
             </nav>
 
             <!-- recent-post -->
-            <div class="row-md-12">
+            <div class="row-md-12 shadow p-3 mb-5 bg-white rounded">
                 <div class="list-group">
                     <a href="berita.html" class="list-group-item list-group-item-action active">Recent Posts</a>
                     <div class="list-group-item">
@@ -329,8 +329,10 @@
             var linkTo = "./login/user/index-user.html";
 
             if (username === "ficrihnp" && password == "fic123") {
-                document.location.href = linkTo;
                 alert(`Selamat datang kembali ${username}`);
+                setTimeout(function() {
+                    location.replace(linkTo);}
+                    );
             } else {
                 alert(`Maaf, password atau username anda salah. Silahkan masukan password atau username dengan benar!`);
             }
@@ -339,10 +341,13 @@
         function validationAdmin() {
             var username = document.getElementById("usernameAdmin").value;
             var password = document.getElementById("passwordAdmin").value;
-            
+            var linkToAdmin = "./login/admin/admin-dsta.html";
+
             if (username === "admin1" && password == "admin") {
-                document.location.href = './login/admin/admin-dsta.html';
                 alert(`Selamat datang kembali ${username}`);
+                setTimeout(function () {
+                    location.replace(linkToAdmin);
+                });
             } else {
                 alert(`Maaf, password atau username anda salah. Silahkan masukan password atau username dengan benar!`);
             }
