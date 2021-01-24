@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="../../img/favicon/apple-touch-icon.png">
+    
+    <title>SISTA</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-default bg-white">
+            <a class="navbar-brand" href="./admin-dsta.html">
+                <img src="../../img/logo/Logo.svg" width="200" height="100" alt="logoWeb">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto px-4">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pengaturan Seminar
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="admin-dsta.html">Daftar Seminar TA</a>
+                            <a class="dropdown-item" href="admin-psta.html">Pemakalah Seminar TA</a>
+                            <a class="dropdown-item" href="admin-dpsta.html">Daftar Peserta Seminar TA</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown px-4 active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pengaturan Registrasi
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="admin-vru.html">Verifikasi Registrasi User</a>
+                            <a class="dropdown-item" href="admin-kru.html">Kelola Registrasi User</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown px-4">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"
+                                style="width: 1.5em;"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item font-weight-bold disabled">Admin 1</a>
+                            <a class="dropdown-item" href="#validationLogout" data-toggle="modal">Keluar</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <hr>
+    </div>
+
+    <!-- Modal validasi keluar -->
+    <div id="validationLogout" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Apakah anda yakin ingin keluar ?</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="submit" onclick="validationLogout()" class="btn btn-block btn-md"
+                                value="Yakin">
+                            <input type="submit" onclick="validationNoLogout()" class="btn btn-block btn-md"
+                                value="Tidak, yakin">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- content -->
+    <!-- Daftar Peserta Seminar Tugas Akhir -->
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid bg-white">
+
+            <h1 class="display-5"><span id="dpsta" class="color">|</span>Kelola Registrasi User
+            </h1>
+
+
+            <!-- table -->
+            <div class="table-responsive mt-4">
+                <table class="table-bordered table table-hover table-dark text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">NO</th>
+                            <th scope="col">NIM</th>
+                            <th scope="col">NAMA</th>
+                            <th scope="col">EMAIL</th>
+                            <th scope="col">NO TELP</th>
+                            <th scope="col">PASSWORD</th>
+                            <th scope="col">ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>011021931</td>
+                            <td>
+                                Santos
+                            </td>
+                            <td>santos@gmail.com</td>
+                            <td>082125252892</td>
+                            <td>NasiPecel007</td>
+                            <td>
+                                <button class="btn btn-md btn-blue mb-1 mt-1"><i class="fa fa-edit"></i>
+                                    Ubah</button>
+                                <button class="btn btn-md btn-red mb-1 mt-1"><i class="fa fa-remove"></i>
+                                    Hapus</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>0110211245</td>
+                            <td>Maurer</td>
+                            <td>MaurerUnyu@gmail.com</td>
+                            <td>08212523298</td>
+                            <td>KebabB4b44L1</td>
+                            <td>
+                                <button class="btn btn-md btn-blue mb-1 mt-1"><i class="fa fa-edit"></i>
+                                    Ubah</button>
+                                <button class="btn btn-md btn-red mb-1 mt-1"><i class="fa fa-remove"></i>
+                                    Hapus</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>011027425</td>
+                            <td>Robert Chaniago</a>
+                            </td>
+                            <td>
+                                bob32231@gmail.com
+                            </td>
+                            <td>082121252893</td>
+                            <td>IniPassword</td>
+                            <td>
+                                <button class="btn btn-md btn-blue mb-1 mt-1"><i class="fa fa-edit"></i>
+                                    Ubah</button>
+                                <button class="btn btn-md btn-red mb-1 mt-1"><i class="fa fa-remove"></i>
+                                    Hapus</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Footer -->
+    <footer class="bg-light text-lg-start" style="color:#393E46;">
+        <div class="container">
+            <!-- Grid container -->
+            <hr>
+            <div class="footer">
+                <div class="container-fluid p-3">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <address>
+                                <img src="../../img/logo/Logo.svg" style="width: 150px; height: auto;" alt="logoFooter">
+                            </address>
+                        </div>
+                        <div class="col-md-3">
+                            <address>
+                                <h5 class="font-weight-bold">INFO</h5>
+                                <a href="https://nurulfikri.ac.id/">STT NF</a><br /> <a
+                                    href="https://journal.nurulfikri.ac.id/index.php/jtt">Journal</a><br />
+                                <a href="https://library.nurulfikri.ac.id/">Library</a> <br /> <a
+                                    href="http://dosen.nurulfikri.ac.id/">Dosen</a>
+                            </address>
+                        </div>
+                        <div class="col-md-4">
+                            <address>
+                                <h5 class="font-weight-bold">HUBUNGI KAMI</h5>
+                                Jl. Raya Lenteng Agung No.20, RT.4/RW.1,<br /> Srengseng Sawah, Kec. Jagakarsa,
+                                Kota
+                                <br />Jakarta
+                                Selatan, DKI Jakarta 12640 <br /> E-mail: info@nurulfikri.ac.id <br /><abbr
+                                    title="Phone"></abbr> +62 857
+                                1624 3174
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </div>
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #222831; color: whitesmoke;">
+            <a>Copyright &copy; 2021 - Kelompok 7</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script>
+        function validationLogout() {
+            var linkTo = "../../index.html";
+            document.location.href = linkTo;
+            alert(`Anda berhasil keluar`);
+        }
+
+        function validationNoLogout() {
+            document.location.href = "./admin-dsta.html";
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

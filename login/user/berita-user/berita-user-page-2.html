@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="../../../img/favicon/apple-touch-icon.png">
+
+    <title>SISTA</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-default bg-white">
+            <a class="navbar-brand" href="index-user.html">
+                <img src="../../../img/logo/Logo.svg" width="200" height="100" alt="logoWeb">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="../index-user.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="../jadwal.html">Jadwal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="../daftar-seminar.html">Daftar Seminar</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link px-4" href="../berita-user.html">Berita</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"
+                                style="width: 1.5em;"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item font-weight-bold disabled">Ficri Hanip</a>
+                            <a class="dropdown-item" href="#validationLogout" data-toggle="modal">Keluar</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- End -->
+
+    <!-- Modal validasi keluar -->
+    <div id="validationLogout" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Apakah anda yakin ingin keluar ?</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="submit" onclick="validationLogout()" class="btn btn-block btn-md"
+                                value="Yakin">
+                            <input type="submit" onclick="validationNoLogout()" class="btn btn-block btn-md"
+                                value="Tidak, yakin">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+
+    <!-- Content -->
+    <div class="container">
+        <div class="card-deck mt-4">
+            <div class="card bg-abu-abu">
+                <div class="card-body text-left">
+                    <h5 class="card-title font-weight-bold"> STT Terpadu Nurul Fikri Teken MoU dengan P4GN BNN Jawa
+                        Barat (BNN Kota Depok) untuk menciptakan Kampus Bersinar (Bersih Narkoba)</h5>
+                </div>
+                <img class="card-img-top rounded" src="../../../img/berita/berita-1.jpeg" alt="Card image"
+                    style="width:100%">
+                <div class="card-body text-left">
+                    <p>Kamis, 12 November 2020 STT Terpadu Nurul Fikri telah menghadiri undangan dari Program
+                        Pencegahan,
+                        Pemberantasan Penyalahgunaan dan Peredaran Gelap Narkoba (P4GN) BNN Jawa Barat (BNN Kota Depok).
+                        Bertempat di Ruangan Rapat Kantor BNN Kota Depok (Jl. Merdeka No.10, Kel. Abadijaya, Kec.
+                        Sukmajaya,
+                        Kota Depok, Jawa Barat 16417).
+                    </p>
+                    <p>
+                        Disambut dengan Ketua BNN Kota Depok yaitu AKBP M. Rusli Lubis, M.Si. menyampaikan pentingnya
+                        kerjasama dalam menyukseskan program P4GN untuk terciptanya Kampus Bersinar (Bersih Narkoba).
+                        Setelah sambutan, adapun Penyerahan Nota Kesepahaman BNN Kota Depok dengan STT Terpadu Nurul
+                        Fikri
+                        dan selain itu dari pihak BNN Kota Depok juga memberikan T-Shirt sebagai Icon atau penggiat
+                        Perwakilan BNN serta Spanduk.
+                    </p>
+                    <p>
+                        Yang hadir dalam undangan ini selain STT Terpadu Nurul Fikri ada dari kampus lain diantaranya
+                        STIKES
+                        Raflesia, STKIP Arrahmaniyah, Universitas Pembangunan Nasional Veteran Jakarta, Sekolah Tinggi
+                        Ilmu
+                        Ekonomi Fajar, Politeknik Tiara Bunda, Sekolah Tinggi Ilmu Ekonomi Hidyatullah Depok, Sekolah
+                        Tinggi
+                        Ilmu Hukum dan Politik Pelopor Bangsa. Masing-masing kampus diberikan MoU BNN Jawa Barat,
+                        T-Shirt
+                        untuk penggiat P4GN, dan Spanduk Kampus Bersinar (Bersih Narkoba).
+                    </p>
+                    <p>
+                        Kerjasama ini bertujuan untuk:
+                    </p>
+                    <ol>
+                        <li>Membangun dan memperkuat jaringan kerja dan kemitraan dalam rangka membangun sinergi
+                            komitmen,
+                            sumberdaya, inovasi program dan strategi bagi optimalisasi program P4GN di perguruan Tinggi
+                            se
+                            Jawa Barat khususnya di Kota Depok dalam mewujudkan Kampus Bersinar (Bersih Narkoba).</li>
+                        <li>Terwujudnya gerakan kolaborasi program P4GN lintas sektor yang melibatkan unsur Pemerintah,
+                            unsur Perguruan Tinggi, unsur Komunitas, unsur Bisnis dan unsur Media bagi upaya
+                            menghadirkan
+                            program P4GN di lingkungan keluarga, masyarakat, lingkungan pekerja.</li>
+                    </ol>
+                    <p>
+                        Ruang lingkup kerjasama ini meliputi bidang:
+                    </p>
+                    <ol>
+                        <li>Pertukaran informasi antara para pihak.</li>
+                        <li>Kajian akademik terhadap optimalisasi Program P4GN di semua bidang.</li>
+                        <li>Mengembangkan metoda Rehabilitasi pecandu narkoba secara terpadu dan berkelanjutan.</li>
+                        <li>Mendorong P4GN masuk dalam Regulasi Perguruan Tinggi.</li>
+                        <li>Mengkaji dan menyiapkan konten P4GN dalam mata kuliah tertentu.</li>
+                        <li>Kerjasama dalam screening deteksi narkoba.</li>
+                        <li>Webinar, Seminar, Workshop dan Pelatihan dikordinasi oleh Artipena Jawa Barat.</li>
+                        <li>Kerjasama P4GN masuk dalam program KKNM (Kuliah Kerja Nyata Mahasiswa).</li>
+                        <li>Melakukan kajian Relawan Anti Narkoba sebagai salah satu skema mahasiswa dua semester
+                            belajar di
+                            luar kampus dikordinasi oleh Artipena Jawa Barat.</li>
+                        <li>Mendorong, hadirnya Satgas P4GN di Kampus yang melibatkan mahasiswa, dosen dan tenaga
+                            kependidikan dengan dukungan BNN Provinsi Jawa Barat dan BNNK se-Jawa Barat.</li>
+                    </ol>
+                    <p>“Kegiatan yang dilakukan selain penyerahan Nota Kesepahaman atau MoU yaitu masing-masing
+                        perguruan
+                        tinggi memberikan saran dan masukan dalam rangka menyukseskan program P4GN. Salah satu yang akan
+                        dilakukan oleh Sekolah Tinggi Teknologi Nurul Fikri adalah materi P4GN akan diberikan kepada
+                        Dosen
+                        untuk disampaikan kepada mahasiswa dan juga bagian LPPM dalam rangka pengabdian kepada
+                        masyarakat.
+                        Selain itu juga untuk penerimaan mahasiswa baru tahun depan akan kerjasama dengan team BNN Kota
+                        Depok untuk melakukan dan mengadakan tes urine kepada calon mahasiswa STT Terpadu Nurul Fikri.”
+                        ujar
+                        Krisna Panji (Ketua PMB STT Terpadu Nurul Fikri).
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- recent-post -->
+        <div class="row-md-12 mt-4">
+            <div class="list-group">
+                <a href="../berita-user.html" class="list-group-item list-group-item-action active">Recent Posts</a>
+                <div class="list-group-item">
+                    <p class="list-group-item-text">
+                        <a href="../berita-user/berita-user-page-2.html"
+                            class="list-group-item list-group-item-action">STT Terpadu Nurul
+                            Fikri Teken MoU dengan P4GN BNN Jawa Barat (BNN
+                            Kota Depok) untuk menciptakan Kampus Bersinar (Bersih Narkoba)</a>
+                        <a href="../berita-user/berita-user-page-3.html"
+                            class="list-group-item list-group-item-action">STT Terpadu Nurul
+                            Fikri Menyambut Mahasiswa Baru TA. 2020/2021
+                            dengan Orientasi Akademik Secara Daring/Online</a>
+                        <a href="../berita-user/berita-user-page-4.html"
+                            class="list-group-item list-group-item-action">GEMASTIK 2020
+                            Mahasiswa STT Terpadu Nurul Fikri “TIK untuk Indonesia
+                            Maju”</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-lg-start" style="color:#393E46;">
+        <div class="container">
+            <!-- Grid container -->
+            <hr>
+            <div class="footer">
+                <div class="container-fluid p-3">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <address>
+                                <img src="../../../img/logo/Logo.svg" style="width: 150px; height: auto;"
+                                    alt="logoFooter">
+                            </address>
+                        </div>
+                        <div class="col-md-3">
+                            <address>
+                                <h5 class="font-weight-bold">INFO</h5>
+                                <a href="https://nurulfikri.ac.id/">STT NF</a><br /> <a
+                                    href="https://journal.nurulfikri.ac.id/index.php/jtt">Journal</a><br />
+                                <a href="https://library.nurulfikri.ac.id/">Library</a> <br /> <a
+                                    href="http://dosen.nurulfikri.ac.id/">Dosen</a>
+                            </address>
+                        </div>
+                        <div class="col-md-4">
+                            <address>
+                                <h5 class="font-weight-bold">HUBUNGI KAMI</h5>
+                                Jl. Raya Lenteng Agung No.20, RT.4/RW.1,<br /> Srengseng Sawah, Kec. Jagakarsa,
+                                Kota
+                                <br />Jakarta
+                                Selatan, DKI Jakarta 12640 <br /> E-mail: info@nurulfikri.ac.id <br /><abbr
+                                    title="Phone"></abbr> +62 857
+                                1624 3174
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </div>
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #222831; color: whitesmoke;">
+            <a>Copyright &copy; 2021 - Kelompok 7</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script>
+        function validationLogout() {
+            var linkTo = "../../../index.html";
+            document.location.href = linkTo;
+            alert(`Anda berhasil keluar`);
+        }
+
+        function validationNoLogout() {
+            document.location.href = "index-user.html";
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

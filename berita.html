@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon/apple-touch-icon.png">
+
+    <title>SISTA</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-default bg-white">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo/Logo.svg" width="200" height="100" alt="logoWeb">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link px-4" href="berita.html">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Login
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#modalUser" data-toggle="modal">User</a>
+                            <a class="dropdown-item" href="#modalAdmin" data-toggle="modal">Admin</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- End -->
+
+    <!-- Modal Admin -->
+    <div id="modalUser" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="validationUser()">
+                        <div class="form-group">
+                            <i class="fa fa-user"></i>
+                            <input type="text" id="username" class="form-control" placeholder="Username" required="required">
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" id="password" class="form-control" placeholder="Password" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-block btn-lg" value="Login">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Modal Admin -->
+    <div id="modalAdmin" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login Admin</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="validationAdmin()">
+                        <div class="form-group">
+                            <i class="fa fa-user"></i>
+                            <input type="text" id="usernameAdmin" class="form-control" placeholder="Username" required="required">
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" id="passwordAdmin" class="form-control" placeholder="Password" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-block btn-lg" value="Login">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Carousel -->
+    <div class="carousel slide" id="carousel-161723">
+        <ol class="carousel-indicators">
+            <li data-slide-to="0" data-target="#carousel-161723" class="active">
+            </li>
+            <li data-slide-to="1" data-target="#carousel-161723">
+            </li>
+            <li data-slide-to="2" data-target="#carousel-161723">
+            </li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" alt="Carousel Bootstrap First" src="./img/berita/header-berita-1.png" />
+                <div class="carousel-caption">
+                    <h4>
+                        STT Terpadu Nurul Fikri Teken MoU dengan P4GN BNN Jawa Barat (BNN Kota Depok) untuk
+                        menciptakan Kampus Bersinar (Bersih Narkoba)
+                    </h4>
+                    <p>
+                        Kamis, 12 November 2020 STT Terpadu Nurul Fikri telah menghadiri undangan dari
+                        Program Pencegahan, Pemberantasan Penyalahgunaan dan Peredaran Gelap Narkoba (P4GN)..
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" alt="Carousel Bootstrap Second" src="./img/berita/header-berita-2.png" />
+                <div class="carousel-caption">
+                    <h4>
+                        STT Terpadu Nurul Fikri Menyambut Mahasiswa Baru TA. 2020/2021 dengan Orientasi
+                        Akademik Secara Daring/Online
+                    </h4>
+                    <p>
+                        Orientasi Akademik (Ormik) merupakan salah satu kegiatan yang diselenggarakan STT-NF
+                        untuk menyambut mahasiswa baru. Ormik diselenggarakan untuk memberikan pengetahuan
+                        kepada mahasiswa baru...
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" alt="Carousel Bootstrap Third" src="./img/berita/header-berita-3.png" />
+                <div class="carousel-caption">
+                    <h4>
+                        GEMASTIK 2020 Mahasiswa STT Terpadu Nurul Fikri “TIK untuk Indonesia Maju”
+                    </h4>
+                    <p>
+                        Apa itu Gemastik? Gemastik arti dari Pagelaran Mahasiswa Nasional Bidang Teknologi
+                        dan Komunikasi. Gemastik ini juga merupakan Program Direktorat Kemahasiswaan...
+                    </p>
+                </div>
+            </div>
+        </div> <a class="carousel-control-prev" href="#carousel-161723" data-slide="prev"><span
+                class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a
+            class="carousel-control-next" href="#carousel-161723" data-slide="next"><span
+                class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid bg-white">
+            <h1 class="display-5"><span class="color">|</span>Berita</h1>
+            <div class="card-deck mt-4">
+                <div class="card bg-abu-abu">
+                    <div class="card-body text-left">
+                        <h5 class="card-title font-weight-bold"> STT Terpadu Nurul Fikri Teken MoU dengan P4GN BNN Jawa
+                            Barat (BNN Kota Depok) untuk menciptakan Kampus Bersinar (Bersih Narkoba)</h5>
+                    </div>
+                    <img class="card-img-top" src="./img/berita/berita-1.jpeg" alt="Card image" style="width:100%">
+                    <div class="card-body text-left">
+                        <p>
+                            Kamis, 12 November 2020 STT Terpadu Nurul Fikri telah menghadiri undangan dari Program
+                            Pencegahan, Pemberantasan Penyalahgunaan dan Peredaran Gelap Narkoba (P4GN) BNN Jawa Barat
+                            (BNN Kota Depok). Bertempat di Ruangan Rapat Kantor BNN Kota Depok (Jl. Merdeka No.10, Kel.
+                            Abadijaya, Kec. Sukmajaya, Kota Depok, Jawa Barat 16417)... <a href="./berita/berita-page-2.html">Baca
+                                Selanjutnya</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mt-4">
+                <div class="card bg-abu-abu">
+                    <div class="card-body text-left">
+                        <h5 class="card-title font-weight-bold">STT Terpadu Nurul Fikri Teken MoU dengan P4GN BNN Jawa
+                            Barat (BNN Kota Depok) untuk menciptakan Kampus Bersinar (Bersih Narkoba)</h5>
+                    </div>
+                    <img class="card-img-top" src="./img/berita/berita-2.jpeg" alt="Card image" style="width:100%">
+                    <div class="card-body text-left">
+                        <p>
+                            Orientasi Akademik (Ormik) merupakan salah satu kegiatan yang diselenggarakan STT-NF untuk
+                            menyambut mahasiswa baru. Ormik diselenggarakan untuk memberikan pengetahuan kepada
+                            mahasiswa baru terkait dengan sejarah STT-NF, sistem perkuliahan, pelayanan mahasiswa,
+                            administrasi akademik, talkshow Alumni dan kegiatan mahasiswa seperti LFK, dan lain-lain.
+                            ... <a href="./berita/berita-page-3.html">Baca Selanjutnya</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mt-4">
+                <div class="card bg-abu-abu">
+                    <div class="card-body text-left">
+                        <h5 class="card-title font-weight-bold">GEMASTIK 2020 Mahasiswa STT Terpadu Nurul Fikri “TIK
+                            untuk Indonesia Maju”</h5>
+                    </div>
+                    <img class="card-img-top" src="./img/berita/berita-3.jpeg" alt="Card image" style="width:100%">
+                    <div class="card-body text-left">
+                        <p>
+                            Apa itu Gemastik? Gemastik arti dari Pagelaran Mahasiswa Nasional Bidang Teknologi dan
+                            Komunikasi. Gemastik ini juga merupakan Program Direktorat Kemahasiswaan, Direktorat
+                            Jenderal Pembelajaran dan Kemahasiswaan Kementerian Riset, Teknologi dan Pendidikan
+                            Tinggi... <a href="./berita/berita-page-4.html">Baca Selanjutnya</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- pagination -->
+            <nav class="mt-4">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#">Previous</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="berita.html">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- recent-post -->
+            <div class="row-md-12">
+                <div class="list-group">
+                    <a href="berita.html" class="list-group-item list-group-item-action active">Recent Posts</a>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">
+                            <a href="./berita/berita-page-2.html" class="list-group-item list-group-item-action">STT Terpadu Nurul
+                                Fikri Teken MoU dengan P4GN BNN Jawa Barat (BNN
+                                Kota Depok) untuk menciptakan Kampus Bersinar (Bersih Narkoba)</a>
+                            <a href="./berita/berita-page-3.html" class="list-group-item list-group-item-action">STT Terpadu Nurul
+                                Fikri Menyambut Mahasiswa Baru TA. 2020/2021
+                                dengan Orientasi Akademik Secara Daring/Online</a>
+                            <a href="./berita/berita-page-4.html" class="list-group-item list-group-item-action">EMASTIK 2020
+                                Mahasiswa STT Terpadu Nurul Fikri “TIK untuk Indonesia
+                                Maju”</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+
+    <!-- Footer -->
+    <footer class="bg-light text-lg-start" style="color:#393E46;">
+        <div class="container">
+            <!-- Grid container -->
+            <hr>
+            <div class="footer">
+                <div class="container-fluid p-3">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <address>
+                                <img src="../src/img/logo/Logo.svg" style="width: 150px; height: auto;"
+                                    alt="logoFooter">
+                            </address>
+                        </div>
+                        <div class="col-md-3">
+                            <address>
+                                <h5 class="font-weight-bold">INFO</h5>
+                                <a href="https://nurulfikri.ac.id/">STT NF</a><br /> <a
+                                    href="https://journal.nurulfikri.ac.id/index.php/jtt">Journal</a><br />
+                                <a href="https://library.nurulfikri.ac.id/">Library</a> <br /> <a
+                                    href="http://dosen.nurulfikri.ac.id/">Dosen</a>
+                            </address>
+                        </div>
+                        <div class="col-md-4">
+                            <address>
+                                <h5 class="font-weight-bold">HUBUNGI KAMI</h5>
+                                Jl. Raya Lenteng Agung No.20, RT.4/RW.1,<br /> Srengseng Sawah, Kec. Jagakarsa,
+                                Kota
+                                <br />Jakarta
+                                Selatan, DKI Jakarta 12640 <br /> E-mail: info@nurulfikri.ac.id <br /><abbr
+                                    title="Phone"></abbr> +62 857
+                                1624 3174
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </div>
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #222831; color: whitesmoke;">
+            <a>Copyright &copy; 2021 - Kelompok 7</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script>
+        function validationUser() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var linkTo = "./login/user/index-user.html";
+
+            if (username === "ficrihnp" && password == "fic123") {
+                document.location.href = linkTo;
+                alert(`Selamat datang kembali ${username}`);
+            } else {
+                alert(`Maaf, password atau username anda salah. Silahkan masukan password atau username dengan benar!`);
+            }
+        }
+
+        function validationAdmin() {
+            var username = document.getElementById("usernameAdmin").value;
+            var password = document.getElementById("passwordAdmin").value;
+            
+            if (username === "admin1" && password == "admin") {
+                document.location.href = './login/admin/admin-dsta.html';
+                alert(`Selamat datang kembali ${username}`);
+            } else {
+                alert(`Maaf, password atau username anda salah. Silahkan masukan password atau username dengan benar!`);
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
