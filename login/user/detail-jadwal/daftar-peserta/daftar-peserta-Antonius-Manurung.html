@@ -161,27 +161,27 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label class="col-form-label font-weight-bold" for="program">Program</label>
-                                        <div class="form-control-plaintext">
-                                            <div class="form-check form-check-inline">
+                                        <div class="form-control-plaintext" id="program">
+                                            <div class="form-check form-check-inline" id="p_1">
                                                 <label class="form-check-label">
                                                     <input class="form-check-input" type="radio"
                                                         name="inlineRadioOptions" id="d3" value="D3" required> D3
                                                 </label>
                                             </div>
-                                            <div class="form-check form-check-inline">
+                                            <div class="form-check form-check-inline" id="p_2">
                                                 <label class="form-check-label">
                                                     <input class="form-check-input" type="radio"
                                                         name="inlineRadioOptions" id="s1" value="S1" required> S1
                                                 </label>
                                             </div>
-                                            <div class="form-check form-check-inline">
+                                            <div class="form-check form-check-inline" id="p_3">
                                                 <label class="form-check-label">
                                                     <input class="form-check-input" type="radio"
                                                         name="inlineRadioOptions" id="s1ft" value="S1FastTrackt"
                                                         required> S1 Fast Trackt
                                                 </label>
                                             </div>
-                                            <div class="form-check form-check-inline">
+                                            <div class="form-check form-check-inline" id="p_4">
                                                 <label class="form-check-label">
                                                     <input class="form-check-input" type="radio"
                                                         name="inlineRadioOptions" id="s2" value="S2" required> S2
@@ -256,7 +256,7 @@
     <script>
         function validationLogout() {
             var linkTo = "../../../../index.html";
-            
+
             alert(`Anda berhasil keluar`);
 
             setTimeout(function () {
@@ -266,6 +266,25 @@
 
         function validationNoLogout() {
             document.location.href = "detail-jadwal-Antonius-Manurung.html";
+        }
+
+        function Login() {
+            var peserta = document.getElementById('namaPeserta').value;
+            var nim = document.getElementById('nimPeserta').value;
+            var prodi = document.getElementById('prodiPeserta').value;
+            var prog = document.getElementsByTagName('input');
+            var prog_value;
+
+            for (i = 0; i < prog.length; i++) {
+
+                if (prog[i].type="radio") {
+
+                    if (prog[i].checked)
+                    prog_value = prog[i].value;
+                }
+            }
+
+            alert(`Selamat anda dengan, Nama ${peserta} Nim ${nim} Prodi ${prodi} Program ${prog_value}, Silahkan menghubungi admin untuk proses verifikasi, terimakasih.`);
         }
 
     </script>

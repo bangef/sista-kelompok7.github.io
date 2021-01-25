@@ -256,7 +256,7 @@
     <script>
         function validationLogout() {
             var linkTo = "../../../../index.html";
-            
+
             alert(`Anda berhasil keluar`);
 
             setTimeout(function () {
@@ -266,6 +266,25 @@
 
         function validationNoLogout() {
             document.location.href = "detail-jadwal-Antonius-Manurung.html";
+        }
+
+        function Login() {
+            var peserta = document.getElementById('namaPeserta').value;
+            var nim = document.getElementById('nimPeserta').value;
+            var prodi = document.getElementById('prodiPeserta').value;
+            var prog = document.getElementsByTagName('input');
+            var prog_value;
+
+            for (i = 0; i < prog.length; i++) {
+
+                if (prog[i].type="radio") {
+
+                    if (prog[i].checked)
+                    prog_value = prog[i].value;
+                }
+            }
+
+            alert(`Selamat anda dengan, Nama ${peserta} Nim ${nim} Prodi ${prodi} Program ${prog_value}, Silahkan menghubungi admin untuk proses verifikasi, terimakasih.`);
         }
 
     </script>
