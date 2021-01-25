@@ -48,6 +48,29 @@
     </div>
     <!-- end -->
 
+    <!-- Modal validasi keluar -->
+    <div id="validationLogout" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Apakah anda yakin ingin keluar ?</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="submit" onclick="validationLogout()" class="btn btn-block btn-md"
+                                value="Yakin">
+                            <input type="submit" onclick="validationNoLogout()" class="btn btn-block btn-md"
+                                value="Tidak, yakin">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
 
     <!-- Content -->
     <div class="container">
@@ -59,10 +82,12 @@
                 </div>
                 <img class="card-img-top rounded" src="../img/berita/berita-1.jpeg" alt="Card image" style="width:100%">
                 <div class="card-body text-left">
-                    <p>Kamis, 12 November 2020 STT Terpadu Nurul Fikri telah menghadiri undangan dari Program Pencegahan,
-                    Pemberantasan Penyalahgunaan dan Peredaran Gelap Narkoba (P4GN) BNN Jawa Barat (BNN Kota Depok).
-                    Bertempat di Ruangan Rapat Kantor BNN Kota Depok (Jl. Merdeka No.10, Kel. Abadijaya, Kec. Sukmajaya,
-                    Kota Depok, Jawa Barat 16417).
+                    <p>Kamis, 12 November 2020 STT Terpadu Nurul Fikri telah menghadiri undangan dari Program
+                        Pencegahan,
+                        Pemberantasan Penyalahgunaan dan Peredaran Gelap Narkoba (P4GN) BNN Jawa Barat (BNN Kota Depok).
+                        Bertempat di Ruangan Rapat Kantor BNN Kota Depok (Jl. Merdeka No.10, Kel. Abadijaya, Kec.
+                        Sukmajaya,
+                        Kota Depok, Jawa Barat 16417).
                     </p>
                     <p>
                         Disambut dengan Ketua BNN Kota Depok yaitu AKBP M. Rusli Lubis, M.Si. menyampaikan pentingnya
@@ -162,8 +187,7 @@
                     <div class="row">
                         <div class="col-md-5">
                             <address>
-                                <img src="../img/logo/Logo.svg" style="width: 150px; height: auto;"
-                                    alt="logoFooter">
+                                <img src="../img/logo/Logo.svg" style="width: 150px; height: auto;" alt="logoFooter">
                             </address>
                         </div>
                         <div class="col-md-3">
@@ -199,6 +223,22 @@
         </div>
         <!-- Copyright -->
     </footer>
+
+    <script>
+        function validationLogout() {
+            var linkTo = "../index.html";
+            alert(`Anda berhasil keluar`);
+
+            setTimeout(function () {
+                location.replace(linkTo);
+            });
+        }
+
+        function validationNoLogout() {
+            document.location.href = "index-user.html";
+        }
+
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

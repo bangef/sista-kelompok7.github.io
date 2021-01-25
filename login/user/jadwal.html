@@ -200,12 +200,16 @@
         </div>
         <!-- Copyright -->
     </footer>
-    
+
     <script>
         function validationLogout() {
             var linkTo = "../../index.html";
-            document.location.href = linkTo;
+
             alert(`Anda berhasil keluar`);
+
+            setTimeout(function () {
+                location.replace(linkTo);
+            });
         }
 
         function validationNoLogout() {

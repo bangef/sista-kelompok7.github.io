@@ -48,6 +48,28 @@
     </div>
     <!-- end -->
 
+    <!-- Modal validasi keluar -->
+    <div id="validationLogout" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Apakah anda yakin ingin keluar ?</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="submit" onclick="validationLogout()" class="btn btn-block btn-md"
+                                value="Yakin">
+                            <input type="submit" onclick="validationNoLogout()" class="btn btn-block btn-md"
+                                value="Tidak, yakin">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
 
     <!-- Content -->
     <div class="container">
@@ -171,6 +193,22 @@
         </div>
         <!-- Copyright -->
     </footer>
+
+    <script>
+        function validationLogout() {
+            var linkTo = "../index.html";
+            alert(`Anda berhasil keluar`);
+
+            setTimeout(function () {
+                location.replace(linkTo);
+            });
+        }
+
+        function validationNoLogout() {
+            document.location.href = "index-user.html";
+        }
+
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

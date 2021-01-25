@@ -43,7 +43,8 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" style="width: 1.5em;"></i>
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"
+                                style="width: 1.5em;"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item font-weight-bold disabled">Ficri Hanip</a>
@@ -77,7 +78,7 @@
         </div>
     </div>
     <!-- End -->
-    
+
     <!-- carousel -->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -149,7 +150,7 @@
                             Kamis, 12 November 2020 STT Terpadu Nurul Fikri telah menghadiri undangan dari Program
                             Pencegahan, Pemberantasan Penyalahgunaan dan Peredaran Gelap Narkoba (P4GN) BNN Jawa Barat
                             (BNN Kota Depok). Bertempat di Ruangan Rapat Kantor BNN Kota Depok (Jl. Merdeka No.10, Kel.
-                            Abadijaya, Kec. Sukmajaya, Kota Depok, Jawa Barat 16417)... <a 
+                            Abadijaya, Kec. Sukmajaya, Kota Depok, Jawa Barat 16417)... <a
                                 href="./berita-user/berita-user-page-2.html">Baca
                                 Selanjutnya</a>
                         </p>
@@ -165,7 +166,7 @@
                             menyambut mahasiswa baru. Ormik diselenggarakan untuk memberikan pengetahuan kepada
                             mahasiswa baru terkait dengan sejarah STT-NF, sistem perkuliahan, pelayanan mahasiswa,
                             administrasi akademik, talkshow Alumni dan kegiatan mahasiswa seperti LFK, dan lain-lain.
-                            ... <a  href="./berita-user/berita-user-page-3.html">Baca Selanjutnya</a>
+                            ... <a href="./berita-user/berita-user-page-3.html">Baca Selanjutnya</a>
                         </p>
                     </div>
                 </div>
@@ -178,7 +179,7 @@
                             Apa itu Gemastik? Gemastik arti dari Pagelaran Mahasiswa Nasional Bidang Teknologi dan
                             Komunikasi. Gemastik ini juga merupakan Program Direktorat Kemahasiswaan, Direktorat
                             Jenderal Pembelajaran dan Kemahasiswaan Kementerian Riset, Teknologi dan Pendidikan
-                            Tinggi... <a  href="./berita-user/berita-user-page-4.html">Baca Selanjutnya</a>
+                            Tinggi... <a href="./berita-user/berita-user-page-4.html">Baca Selanjutnya</a>
                         </p>
                     </div>
                 </div>
@@ -236,8 +237,12 @@
     <script>
         function validationLogout() {
             var linkTo = "../../index.html";
-            document.location.href = linkTo;
+
             alert(`Anda berhasil keluar`);
+
+            setTimeout(function () {
+                location.replace(linkTo);
+            });
         }
 
         function validationNoLogout() {
